@@ -336,6 +336,7 @@ footer .footer-main p {
 .lang-btn.active {
     background-color: #ffff;
     color: #0a192f;
+    border: 2px solid #0a192f;
 }
 
 @media (min-width: 768px) {

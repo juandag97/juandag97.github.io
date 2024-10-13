@@ -5,182 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/portfolio.css">
     <link rel="icon" href="img/formal.jpeg" type="image/x-icon">
     <title>Mobile Apps Portafolio</title>
-    <!-- <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0e1c31;
-            color: #ffffff;
-            margin: 0;
-            padding: 20px;
-            height: 100%;
-        }
-        
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .portfolio {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-            gap: 20px;
-            /* height: 80%; */
-        }
-        
-        .card {
-            background-color: #1a2942;
-            border-radius: 10px;
-            padding: 20px;
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .card img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-        
-        .card h2 {
-            margin-top: 0;
-        }
-        
-        .card p {
-            font-size: 14px;
-            line-height: 1.4;
-        }
-    </style> -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0e1c31;
-            color: #ffffff;
-            margin: 0;
-            padding: 20px;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .portfolio {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-            gap: 20px;
-            flex-grow: 1;
-            overflow-y: auto;
-        }
-        
-        @media (max-width: 768px) {
-            .portfolio {
-                grid-template-columns: 1fr;
-                max-height: 70vh;
-            }
-        }
-        
-        .card {
-            background-color: #1a2942;
-            border-radius: 10px;
-            padding: 20px;
-            transition: transform 0.3s ease;
-            cursor: pointer;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .card img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-        
-        .card h2 {
-            margin-top: 0;
-        }
-        
-        .card p {
-            font-size: 14px;
-            line-height: 1.4;
-        }
-    </style>
 </head>
 
 <body>
-    <h1>Mobile Apps Portafolio</h1>
+    <div id="language-buttons">
+        <button class="lang-btn active" onclick="changeLanguagePortafolio('es')">Español</button>
+        <button class="lang-btn" onclick="changeLanguagePortafolio('en')">English</button>
+
+        <h1 id="portafolioTitle">
+
+            Mobile Apps Portafolio
+        </h1>
+    </div>
     <div class="portfolio" id="portfolio">
 
     </div>
     <footer>
 
         <div class="footer-main">
-            <p>Design & built with 💙 by Juan David Acosta.
+            <p id="build">Design & built with 💙 by Juan David Acosta.
                 <script>
                     document.write(new Date().getFullYear())
-                </script>&#169;</p>
+                </script>
+            </p>
+            <p>&#169;</p>
         </div>
     </footer>
-    <script>
-        const apps = [{
-            name: "Dating App",
-            description: "Engage in the excitement of meeting new people with a dating app that matches you based on shared interests, preferences, and location. It’s designed for connection, with features like swiping through profiles, sending personalized messages, and real-time chat. Advanced filters and safety measures ensure an enjoyable, secure experience for finding meaningful relationships.",
-            image: "img/dating.webp",
-            android: ""
-        }, {
-            name: "Trading App",
-            description: "Personal AI trading assistant. Get real-time market insights, automated trading signals, and portfolio management on-the-go. Make smarter investment decisions with advanced analytics and risk assessment tools at your fingertips",
-            image: "img/trade.png",
-        }, {
-            name: "Ecommerce App",
-            description: "This app offers a seamless shopping experience where users can explore a wide range of products, from fashion to electronics, right at their fingertips. It provides an intuitive interface with personalized recommendations, easy navigation, and secure payments. With features like wishlists, exclusive discounts, and real-time order tracking, shoppers stay engaged and satisfied.",
-            image: "img/ecommerce.webp"
-        }, {
-            name: "Chat App",
-            description: "A user-friendly chat app designed for easy and seamless communication. It features a minimalistic interface with a clean layout, showcasing chat bubbles, a text input box, and a send button. The app allows users to quickly send and receive messages with smooth animations and intuitive controls. It's perfect for anyone looking for a straightforward messaging experience without unnecessary complexities.",
-            image: "img/chat-app.webp",
-            android: ""
-        }, {
-            name: "Food Delivery App",
-            description: "A mobile app for food delivery allows users to browse menus, place orders, and have meals delivered. Key features include user-friendly navigation, real-time order tracking, customizable meal options, and secure payment methods. It's designed for a seamless and convenient dining experience.",
-            image: "img/food-delivery.webp",
-        }, {
-            name: "Real Estate App",
-            description: "This mobile app helps users find their dream home or investment property. With features like advanced search filters, interactive maps, virtual tours, and agent contact, it simplifies the process of buying, selling, or renting real estate on the go.",
-            image: "img/real-state.webp"
-        }];
 
-        const portfolio = document.getElementById('portfolio');
-
-        apps.forEach(app => {
-            const card = document.createElement('div');
-            card.className = 'card';
-            card.innerHTML = `
-                <img src="${app.image}" alt="${app.name}">
-                <h2>${app.name}</h2>
-                <p>${app.description}</p>
-                <a href="https://play.google.com/store/apps/details?id=com.juancarlosjuandavid.seven" class="apps-link" target="_blank">
-                    Play Store App
-                </a>
-                `;
-            portfolio.appendChild(card);
-        });
-    </script>
-
+    <script src="js/app.js"></script>
+    <script src="js/portfolio.js"></script>
 </body>
 
 </html>
