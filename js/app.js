@@ -7,6 +7,7 @@ const translations = {
         build: "Diseñado & creado con 💙 por Juan David Acosta. ",
         aboutMe: "Acerca de Mi",
         datingAppTitle: "Aplicación de citas",
+        portfolio: "Portafolio",
         datingAppContent: "Disfruta de la emoción de conocer gente nueva con una aplicación de citas que te empareja en función de tus intereses, preferencias y ubicación. Está diseñada para conectar, con funciones como deslizar el dedo por los perfiles, enviar mensajes personalizados y chatear en tiempo real. Los filtros avanzados y las medidas de seguridad garantizan una experiencia agradable y segura para encontrar relaciones significativas.",
         financeAppTitle: "Aplicación de finanzas y trading",
         financeAppContent: "Asistente personal de finanzas con inteligencia artificial. Obtenga información sobre el mercado en tiempo real, señales de operaciones automatizadas y gestión de carteras en cualquier lugar. Tome decisiones de inversión más inteligentes con herramientas avanzadas de análisis y evaluación de riesgos a su alcance.",
@@ -22,6 +23,7 @@ const translations = {
     en: {
         firstHeadline: "Senior Fullstack Developer at Teleperformance",
         portafolioTitle: "Mobile Apps Portfolio",
+        portfolio: "Portfolio",
         secondHeadline: "Cloud Engineer | Solutions Architect (AWS-Azure)",
         visitors: "Visitors counter since January, 2023",
         build: "Design & built with 💙 by Juan David Acosta. ",
@@ -47,6 +49,7 @@ function changeLanguage(lang) {
     document.getElementById('visitors').innerText = translations[lang].visitors;
     document.getElementById('build').innerText = translations[lang].visitors;
     document.getElementById('aboutMe').innerText = translations[lang].aboutMe;
+    document.getElementById('portfolio').innerText = translations[lang].portfolio;
     document.documentElement.lang = lang;
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
