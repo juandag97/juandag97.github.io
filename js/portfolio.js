@@ -37,13 +37,13 @@ const portfolio = document.getElementById('portfolio');
 apps.forEach(app => {
     const card = document.createElement('div');
     card.className = 'card';
+        // <a href="https://play.google.com/store/apps/details?id=com.juancarlosjuandavid.seven" class="apps-link" target="_blank">
+        //     Play Store App
+        // </a>
     card.innerHTML = `
         <img src="${app.image}" alt="${app.name}">
         <h2 id="${app.id}Title">${app.name}</h2>
         <p id="${app.id}Content">${app.description}</p>
-        <a href="https://play.google.com/store/apps/details?id=com.juancarlosjuandavid.seven" class="apps-link" target="_blank">
-            Play Store App
-        </a>
         `;
     portfolio.appendChild(card);
 });
