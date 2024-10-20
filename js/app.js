@@ -25,7 +25,7 @@ const translations = {
         lastApp: "Descarga nuestra última aplicación: ",
         myselfDetails: "Soy ingeniero electrónico y vivo en Popayán, Colombia. Como desarrollador fullstack, trabajo principalmente con los stacks MERN y MEAN, así como con el desarrollo móvil usando Flutter. Además, soy arquitecto de soluciones en la nube especializado en AWS y Azure. Utilizo herramientas de inteligencia artificial de vanguardia de los principales proveedores de la nube, incluidos Amazon Q, Amazon Bedrock, Azure AI Services, Azure OpenAI y Claude.",
         aboutMe: "Acerca de mi",
-        hiProfession: "Hola, soy Juan, soy ingeniero electrónico y desarrollador de software basado en Popayán, Colombia.",
+        hiProfession: "Hola, soy Juan, soy ingeniero electrónico y desarrollador de software, vivo en Popayán, Colombia.",
         detailsParagraph1: "Me gusta crear cosas que vivan en Internet y que también generen valor para los usuarios. En línea con eso, me encanta trabajar con desarrollo de software, soluciones cloud, inteligencia artificial, ingeniería de datos y aprendizaje automático, ya que estas tecnologías son tendencia y transversales a varios campos.",
         detailsParagraph2: "Me gusta tocar la guitarra, el piano y cantar. Además soy un amante de los autos, especialmente de los carros alemánes y los JDM como: el porsche GTR-RS 911, los bmw clase M y serie 3, el Nissan R34-Skyline, el Nissan GTR-NISMO, el Toyota Supra y el Subaru WRX. Ahora tengo un Chevrolet Sail llamado 'Apollo' (el de la foto). Espero crear un blog pronto, sobre tunning de autos, autos eléctricos, noticias de tecnología, desarrollo de software, inteligencia artificial y un poco de todo.",
         getInTouch: "Ponte en contacto", 
