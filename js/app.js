@@ -33,6 +33,7 @@ const translations = {
         sayHello: "Pongámonos en contacto",
         main: "Inicio",
         contact: "Contacto",
+        book: "Libro"
     },
     en: {
         firstHeadline: "Senior Fullstack Developer at Teleperformance",
@@ -67,8 +68,8 @@ const translations = {
         despiteTheFact: "Despite the fact, I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question, or you just want to say hi, I'll try to reply you back. Cheers.",
         sayHello: "Say Hello",
         main: "Main",
-        contact: "Contact"
-    
+        contact: "Contact",
+        book: "Book"    
     }
 };
 
@@ -79,6 +80,7 @@ function changeLanguage(lang) {
     document.getElementById('build').innerText = translations[lang].visitors;
     document.getElementById('aboutMe').innerText = translations[lang].aboutMe;
     document.getElementById('portfolio').innerText = translations[lang].portfolio;
+    document.getElementById('book').innerText = translations[lang].book;
     document.documentElement.lang = lang;
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
