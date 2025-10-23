@@ -1,35 +1,21 @@
 const apps = [{
     id: "datingApp",
-    name: "Dating App",
+    name: "Dating App Seven Swipes",
     description: "Engage in the excitement of meeting new people with a dating app that matches you based on shared interests, preferences, and location. It’s designed for connection, with features like swiping through profiles, sending personalized messages, and real-time chat. Advanced filters and safety measures ensure an enjoyable, secure experience for finding meaningful relationships.",
     image: "img/dating.webp",
-    android: ""
+    link: ""
 }, {
     id: "financeApp",
-    name: "Trading App",
-    description: "Personal AI trading assistant. Get real-time market insights, automated trading signals, and portfolio management on-the-go. Make smarter investment decisions with advanced analytics and risk assessment tools at your fingertips",
+    name: "Lisa - AI Trading Assistant",
+    description: "Lisa is your personal AI trading assistant designed to help you invest smarter, faster, and with more confidence. She offers real-time market insights, chat and voice interactions, and automated trading signals tailored to your strategy. Whether you’re tracking stocks, ETFs, or crypto, Lisa simplifies complex data into clear, actionable guidance. You can set custom alerts, automate trades, and receive portfolio reviews with AI-driven risk analysis. Her 24/7 availability means you’re never alone in the markets.",
     image: "img/trade.png",
-}, {
-    id: "ecommerceApp",
-    name: "Ecommerce App",
-    description: "This app offers a seamless shopping experience where users can explore a wide range of products, from fashion to electronics, right at their fingertips. It provides an intuitive interface with personalized recommendations, easy navigation, and secure payments. With features like wishlists, exclusive discounts, and real-time order tracking, shoppers stay engaged and satisfied.",
-    image: "img/ecommerce.webp"
+    link: "https://lisa-chatbot-front.azurewebsites.net/"
 }, {
     id: "chatApp",
-    name: "Chat App",
-    description: "A user-friendly chat app designed for easy and seamless communication. It features a minimalistic interface with a clean layout, showcasing chat bubbles, a text input box, and a send button. The app allows users to quickly send and receive messages with smooth animations and intuitive controls. It's perfect for anyone looking for a straightforward messaging experience without unnecessary complexities.",
+    name: "Megan companion",
+    description: "Megan is your intelligent, always-available coach designed to help you master any skill or subject, from learning new languages like English, to exploring coding, business, art, and more. Built with cutting-edge AI, Megan tailors your learning experience to your goals, pace, and preferences. Whether you’re starting from scratch or looking to refine advanced skills, Megan adapts to your level and keeps you motivated with smart feedback, bite-sized lessons, and real-world practice.",
     image: "img/chat-app.webp",
-    android: ""
-}, {
-    id: "foodDeliveryApp",
-    name: "Food Delivery App",
-    description: "A mobile app for food delivery allows users to browse menus, place orders, and have meals delivered. Key features include user-friendly navigation, real-time order tracking, customizable meal options, and secure payment methods. It's designed for a seamless and convenient dining experience.",
-    image: "img/food-delivery.webp",
-}, {
-    id: "realStateApp",
-    name: "Real Estate App",
-    description: "This mobile app helps users find their dream home or investment property. With features like advanced search filters, interactive maps, virtual tours, and agent contact, it simplifies the process of buying, selling, or renting real estate on the go.",
-    image: "img/real-state.webp"
+    link: "https://lisa-chatbot-front.azurewebsites.net/"
 }];
 
 const portfolio = document.getElementById('portfolio');
@@ -43,7 +29,29 @@ apps.forEach(app => {
     card.innerHTML = `
         <img src="${app.image}" alt="${app.name}">
         <h2 id="${app.id}Title">${app.name}</h2>
-        <p id="${app.id}Content">${app.description}</p>
+        <p id="${app.id}Content" style="font-size: 20px">${app.description}</p>
+        <a tag="demo-button" href="${app.link}" class="demo-button apps-link" target="_blank">
+    Try it now
+</a>
+
+<style>
+    .apps-link {
+        background-color: #00aeef;        /* Azul claro */
+        color: #ffffff;                   /* Texto blanco */
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .apps-link:hover {
+        background-color: #0096d1;        /* Azul un poco más oscuro en hover */
+        transform: scale(1.05);           /* Efecto zoom suave al pasar el mouse */
+    }
+</style>
         `;
     portfolio.appendChild(card);
 });
