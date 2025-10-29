@@ -3,19 +3,19 @@ const apps = [{
     name: "Dating App Seven Swipes",
     description: "Engage in the excitement of meeting new people with a dating app that matches you based on shared interests, preferences, and location. It’s designed for connection, with features like swiping through profiles, sending personalized messages, and real-time chat. Advanced filters and safety measures ensure an enjoyable, secure experience for finding meaningful relationships.",
     image: "img/dating.webp",
-    link: ""
+    link: "https://lisa-chatbot-front.azurewebsites.net/"
 }, {
     id: "financeApp",
     name: "Lisa - AI Trading Assistant",
     description: "Lisa is your personal AI trading assistant designed to help you invest smarter, faster, and with more confidence. She offers real-time market insights, chat and voice interactions, and automated trading signals tailored to your strategy. Whether you’re tracking stocks, ETFs, or crypto, Lisa simplifies complex data into clear, actionable guidance. You can set custom alerts, automate trades, and receive portfolio reviews with AI-driven risk analysis. Her 24/7 availability means you’re never alone in the markets.",
     image: "img/trade.png",
-    link: "https://lisa-chatbot-front.azurewebsites.net/"
+    link: "https://lisa-ai.lovable.app/"
 }, {
     id: "chatApp",
     name: "Megan companion",
     description: "Megan is your intelligent, always-available coach designed to help you master any skill or subject, from learning new languages like English, to exploring coding, business, art, and more. Built with cutting-edge AI, Megan tailors your learning experience to your goals, pace, and preferences. Whether you’re starting from scratch or looking to refine advanced skills, Megan adapts to your level and keeps you motivated with smart feedback, bite-sized lessons, and real-world practice.",
     image: "img/chat-app.webp",
-    link: "https://lisa-chatbot-front.azurewebsites.net/"
+    link: "https://meganai.lovable.app/"
 }];
 
 const portfolio = document.getElementById('portfolio');
