@@ -1,8 +1,8 @@
 const translations = {
     es: {
-        firstHeadline: "Desarrollador fullstack Senior en Teleperformance",
+        firstHeadline: "Ingeniero de Software Senior en Teleperformance",
         portafolioTitle: "Portafolio de Aplicaciones",
-        secondHeadline: "Ingeniero Cloud | Arquitecto de Soluciones (AWS-Azure)",
+        secondHeadline: "Ingeniero en Electrónica & Telecomunicaciones",
         visitors: "Contador de visitantes desde Enero, 2023",
         build: "Diseñado & creado con 💙 por Juan David Acosta González. ",
         aboutMe: "Acerca de Mi",
@@ -32,15 +32,17 @@ const translations = {
         getInTouch: "Ponte en contacto", 
         despiteTheFact: "A pesar de que actualmente no estoy buscando nuevas oportunidades, mi bandeja de entrada siempre está abierta. Si tienes alguna pregunta o simplemente quieres saludarme, buscaré responderte. Saludos.",
         sayHello: "Pongámonos en contacto",
-        main: "Inicio",
+        main: "David",
         contact: "Contacto",
-        book: "Libro"
+        book: "Libro",
+        homeAbout: "Tarjeta",
+        checkBlog: "Revisa mi blog",
     },
     en: {
-        firstHeadline: "Senior Fullstack Developer at Teleperformance",
+        firstHeadline: "Senior Software Engineer at Teleperformance",
         portafolioTitle: "Apps Portfolio",
         portfolio: "Portfolio",
-        secondHeadline: "Cloud Engineer | Solutions Architect (AWS-Azure)",
+        secondHeadline: "Electronics & Telecomunications Engineer",
         visitors: "Visitors counter since January, 2023",
         build: "Design & built with 💙 by Juan David Acosta González ",
         aboutMe: "About me",
@@ -67,9 +69,11 @@ const translations = {
         getInTouch: "Get In Touch", 
         despiteTheFact: "Despite the fact, I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question, or you just want to say hi, I'll try to reply you back. Cheers.",
         sayHello: "Say Hello",
-        main: "Main",
+        checkBlog: "Check out my blog",
+        main: "David",
         contact: "Contact",
-        book: "Book"    
+        book: "Book",
+        homeAbout: "Card"
     }
 };
 
@@ -77,8 +81,8 @@ function changeLanguage(lang) {
     document.getElementById('firstHeadline').innerText = translations[lang].firstHeadline;
     document.getElementById('secondHeadline').innerText = translations[lang].secondHeadline;
     document.getElementById('visitors').innerText = translations[lang].visitors;
-    document.getElementById('build').innerText = translations[lang].visitors;
-    document.getElementById('aboutMe').innerText = translations[lang].aboutMe;
+    document.getElementById('build').innerText = translations[lang].build;
+    // document.getElementById('aboutMe').innerText = translations[lang].aboutMe;
     document.getElementById('portfolio').innerText = translations[lang].portfolio;
     document.getElementById('book').innerText = translations[lang].book;
     document.documentElement.lang = lang;
@@ -89,7 +93,13 @@ function changeLanguage(lang) {
 }
 
 function changeLanguagePortafolio(lang) {
-    document.getElementById('portafolioTitle').innerText = translations[lang].portafolioTitle;
+    const titleElement = document.getElementById('portafolioTitle');
+    const spanElement = titleElement.querySelector('span');
+    if (spanElement) {
+        spanElement.innerText = translations[lang].portafolioTitle;
+    } else {
+        titleElement.innerText = translations[lang].portafolioTitle;
+    }
     document.getElementById('datingAppTitle').innerText = translations[lang].datingAppTitle;
     document.getElementById('datingAppContent').innerText = translations[lang].datingAppContent;
     document.getElementById('financeAppTitle').innerText = translations[lang].financeAppTitle;
@@ -113,8 +123,14 @@ function changeLanguageAboutMe(lang){
     document.getElementById('buildingThings').innerText = translations[lang].buildingThings;
     document.getElementById('lastApp').innerText = translations[lang].lastApp;
     document.getElementById('myselfDetails').innerText = translations[lang].myselfDetails;
-    document.getElementById('aboutMe').innerText = translations[lang].aboutMe;
-    document.getElementById('hiProfession').innerText = translations[lang].hiProfession;
+    // document.getElementById('aboutMe').innerText = translations[lang].aboutMe;
+    const hiProfessionElement = document.getElementById('hiProfession');
+    const hiProfessionParagraph = hiProfessionElement.querySelector('p');
+    if (hiProfessionParagraph) {
+        hiProfessionParagraph.innerText = translations[lang].hiProfession;
+    } else {
+        hiProfessionElement.innerText = translations[lang].hiProfession;
+    }
     document.getElementById('detailsParagraph1').innerText = translations[lang].detailsParagraph1;
     document.getElementById('detailsParagraph2').innerText = translations[lang].detailsParagraph2;
     document.getElementById('getInTouch').innerText = translations[lang].getInTouch;
@@ -122,8 +138,10 @@ function changeLanguageAboutMe(lang){
     document.getElementById('sayHello').innerText = translations[lang].sayHello;
     document.getElementById('build').innerText = translations[lang].build + new Date().getFullYear();
     document.getElementById('main').innerText = translations[lang].main;
-    document.getElementById('aboutMeNav').innerText = translations[lang].aboutMe;
+    // document.getElementById('aboutMeNav').innerText = translations[lang].aboutMe;
     document.getElementById('contact').innerText = translations[lang].contact;
+    document.getElementById('homeAbout').innerText = translations[lang].homeAbout;
+    document.getElementById('checkBlog').innerText = translations[lang].checkBlog;
     
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');

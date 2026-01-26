@@ -7,68 +7,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <title>JDA Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Juan David Acosta | Senior Software Engineer</title>
     <link rel="icon" href="img/formal.jpeg" type="image/x-icon">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-
 </head>
 
 <body id="card-body">
     <main>
         <section class="central-content-card" id="main-me">
             <div class="central-myself-card">
-                <div class="myself-card">
+                <!-- Language Switcher -->
+                <div class="language-switcher">
                     <div id="language-buttons">
                         <button class="lang-btn" onclick="changeLanguage('es')">Español</button>
                         <button class="lang-btn active" onclick="changeLanguage('en')">English</button>
                     </div>
-                    <img src="img/formal.jpeg" alt="profile-picture" class="profile-pic-card">
-                    <h2 class="text font-bold underline">Juan David Acosta González</h2>
                 </div>
-                <div class="myself-card">
-                    <h4 id="firstHeadline">Senior Fullstack Developer at Teleperformance</h4>
-                    <h4 id="secondHeadline">Cloud Engineer | Solutions Architect (AWS-Azure)</h4>
-                    <div class="links-card">
-                        <a href="https://drive.google.com/file/d/1TSxHOlGebhRRJunhk5E3bJfQgE62r1wx/view?usp=sharing" target="_blank">CV</a>
-                        <a href="about.html" target="_blank" id="aboutMe">About me</a>
-                        <a href="https://lisa-chatbot-front.azurewebsites.net" target="_blank">Chatbot</a>
-                        <a href="mobile.html" target="_blank" id="portfolio">Portfolio</a>
-                        <a href="https://www.amazon.com/dp/B0DKTTSBN7" target="_blank" id="book">Book</a>
+
+                <!-- Profile Section -->
+                <div class="profile-section">
+                    <div class="profile-image-wrapper">
+                        <img src="img/formal.jpeg" alt="Juan David Acosta González" class="profile-pic-card">
+                    </div>
+                    <h1 class="profile-name">Juan David Acosta González</h1>
+                </div>
+
+                <!-- Headlines Section -->
+                <div class="headlines-section">
+                    <h2 class="headline" id="firstHeadline">Senior Software Engineer at Teleperformance</h2>
+                    <h3 class="subheadline" id="secondHeadline">Electronics & Telecomunications Engineer</h3>
+                </div>
+
+                <!-- Links Section -->
+                <div class="links-section">
+                    <nav class="links-card">
+                        <a href="https://drive.google.com/file/d/1oXSgMeYJfYyewfZFLxyoaR_gvG3HwaaE/view?usp=sharing" target="_blank" class="link-item">CV</a>
+                        <a href="about.html" target="_blank" class="link-item" id="aboutMe">About me</a>
+                        <a href="https://lisa-chatbot-front.azurewebsites.net" target="_blank" class="link-item">Chatbot</a>
+                        <a href="mobile.html" target="_blank" class="link-item" id="portfolio">Portfolio</a>
+                        <a href="https://www.amazon.com/dp/B0DKTTSBN7" target="_blank" class="link-item" id="book">Book</a>
+                    </nav>
+                </div>
+
+                <!-- Social Media Section -->
+                <div class="social-section">
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/channel/UCo58t46SZ7wgrjyHstzsNJQ" target="_blank" class="social-link" aria-label="YouTube">
+                            <img src="img/youtube.png" alt="YouTube" class="social-icon">
+                        </a>
+                        <a href="https://github.com/juandag97" target="_blank" class="social-link" aria-label="GitHub">
+                            <img src="img/github.png" alt="GitHub" class="social-icon">
+                        </a>
+                        <a href="https://www.linkedin.com/in/juandag21" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <img src="img/linkedin.png" alt="LinkedIn" class="social-icon">
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.juancarlosjuandavid.seven&hl=en" target="_blank" class="social-link" aria-label="Play Store">
+                            <img src="img/playstore.png" alt="Play Store" class="social-icon">
+                        </a>
                     </div>
                 </div>
 
-                <!-- Social media area -->
-                <div class="myself-card" style="padding: 10px 0 0 0">
-                    <a href="https://www.youtube.com/channel/UCo58t46SZ7wgrjyHstzsNJQ" target="_blank" class="social-media">
-                        <!-- <img src="https://cdn-icons-png.flaticon.com/512/87/87421.png" height="40px"> -->
-                        <img src="img/youtube.png" height="40px">
+                <!-- Visitor Counter Section -->
+                <div class="counter-section">
+                    <a href="https://www.easycounter.com/" class="counter-link">
+                        <img src="https://www.easycounter.com/counter.php?juandag97" border="0" height="25px" alt="Website Hit Counters">
                     </a>
-                    <a href="https://github.com/juandag97" target="_blank" class="social-media">
-                        <!-- <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" height="40px"> -->
-                        <img src="img/github.png" height="40px">
-                    </a>
-                    <a href="https://www.linkedin.com/in/juandag21" target="_blank" class="social-media">
-                        <!-- <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png" height="40px"> -->
-                        <img src="img/linkedin.png" height="40px">
-                    </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.juancarlosjuandavid.seven&hl=en" target="_blank" class="social-media">
-                        <!-- <img src="https://cdn-icons-png.flaticon.com/512/2111/2111473.png" height="40px"> -->
-                        <img src="img/playstore.png" height="40px">
-                    </a>
+                    <p class="counter-text" id="visitors">Visitors counter since January, 2023.</p>
                 </div>
-
-                <div class="myself-card" style="padding: 10px 0">
-                    <a href="https://www.easycounter.com/">
-                        <img src="https://www.easycounter.com/counter.php?juandag97" border="0" height="25px" alt="Website Hit Counters"></a>
-                    <p class="counter" id="visitors">Visitors counter since January, 2023.</p>
-                </div>
-
             </div>
-
         </section>
-        <footer>
+
+        <footer class="footer">
             <div class="footer-main">
                 <p id="build">Design & built with 💙 by Juan David Acosta.
                     <script>
@@ -77,7 +86,7 @@
             </div>
         </footer>
     </main>
+    <script src="js/app.js"></script>
 </body>
-<script src="js/app.js"></script>
 
 </html>
