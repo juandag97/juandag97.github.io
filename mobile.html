@@ -6,31 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="img/formal.jpeg" type="image/x-icon">
     <title>Apps Portafolio</title>
 </head>
 
 <body>
-    <div id="language-buttons">
-        <button class="lang-btn" onclick="changeLanguagePortafolio('es')">Español</button>
-        <button class="lang-btn active" onclick="changeLanguagePortafolio('en')">English</button>
-
-        <h1 id="portafolioTitle" onclick="window.location.href='./index.html'" style="cursor: pointer">
-            Apps Portfolio
-        </h1>
-    </div>
+    <nav class="portfolio-navbar">
+        <div class="navbar-content">
+            <h1 id="portafolioTitle" onclick="window.location.href='./index.html'" style="cursor: pointer">
+                <span>Apps Portfolio</span>
+            </h1>
+            <div id="language-buttons" class="language-switcher-container">
+                <button class="lang-btn" onclick="changeLanguagePortafolio('es')">Español</button>
+                <button class="lang-btn active" onclick="changeLanguagePortafolio('en')">English</button>
+            </div>
+        </div>
+    </nav>
     <div class="portfolio" id="portfolio">
 
     </div>
     <footer>
-
         <div class="footer-main">
             <p id="build">Design & built with 💙 by Juan David Acosta.
                 <script>
                     document.write(new Date().getFullYear())
                 </script>
+                &#169;
             </p>
-            <p>&#169;</p>
         </div>
     </footer>
 

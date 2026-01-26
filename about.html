@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/mq.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>About JDA</title>
     <link rel="icon" href="img/formal.jpeg" type="image/x-icon">
 </head>
@@ -22,6 +22,7 @@
             </div>
             <div>
                 <ul class="nav-list">
+                    <li><a onclick="window.location.href='./index.html'" id="homeAbout" style="cursor: pointer">Home</a></li>
                     <li><a href="#main-me" id="main">Main</a></li>
                     <li><a href="#about-me" id="aboutMeNav">About me</a></li>
                     <li><a href="#contact-me" id="contact">Contact</a></li>
@@ -56,9 +57,9 @@
         </section>
 
         <section class="about-me" id="about-me">
-            <div class="initial-about-me">
-                <h2 id="aboutMe">About me</h2>
-            </div>
+            <!-- <div class="initial-about-me">
+                <h2 id="aboutMe" onclick="window.location.href='./index.html'" style="cursor: pointer">About me</h2>
+            </div> -->
             <div class="full-about-me">
                 <div class="text-about-me">
                     <div class="second-about-me" id="hiProfession">
@@ -71,7 +72,7 @@
                             Toyota Supra, and Subaru WRX. Right now I drive a Chevrolet Sail, but I’m dreaming of picking up a JDM project car—maybe a Mitsubishi Evo boxtype, a Subaru Impreza, a Nissan 370z, a BMW 240, or a 90s Toyota to bring back to
                             life. I’m also planning to launch a blog on my site soon where I’ll share thoughts on car tuning, electric vehicles, tech news, software dev, AI, and whatever else I am into at the moment.</p>
                         <div class="button-contact">
-                            <a href="https://juandavid.lovable.app/" target="_blank" class="button" id="sayHello">Check out my blog</a>
+                            <a href="https://juandavid.lovable.app/" target="_blank" class="button" id="checkBlog">Check out my blog</a>
                         </div>
                     </div>
                 </div>
@@ -100,13 +101,21 @@
                     <script>
                         document.write(new Date().getFullYear())
                     </script>
+                    &#169;
                 </p>
-                <p>&#169;</p>
             </div>
         </footer>
     </main>
 
 </body>
 <script src="js/app.js"></script>
+<script>
+    // Initialize language on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        // Set default language to English
+        const defaultLang = 'en';
+        changeLanguageAboutMe(defaultLang);
+    });
+</script>
 
 </html>
