@@ -1,9 +1,9 @@
 const apps = [{
     id: "datingApp",
-    name: "Dating App Seven Swipes",
-    description: "Engage in the excitement of meeting new people with a dating app that matches you based on shared interests, preferences, and location. It’s designed for connection, with features like swiping through profiles, sending personalized messages, and real-time chat. Advanced filters and safety measures ensure an enjoyable, secure experience for finding meaningful relationships.",
-    image: "img/dating.webp",
-    link: "https://lisa-chatbot-front.azurewebsites.net/"
+    name: "Valeria Car Expert",
+    description: "Rather than suggesting trendy or popular models, the system focuses on practical, technical, and economic criteria to support informed and realistic decision-making. Each recommendation is based on measurable factors such as ownership costs, usage context, maintenance expectations, and long-term viability. The results are fully transparent and explainable, clearly showing why certain vehicles are recommended and what trade-offs are involved. The system is designed around real-world constraints, with a strong emphasis on the Colombian automotive market, where availability, resale value, and operating costs play a critical role in ownership decisions.",
+    image: "img/valeria-icon.png",
+    link: "https://valeriacarexpert.lovable.app"
 }, {
     id: "financeApp",
     name: "Lisa - AI Trading Assistant",
