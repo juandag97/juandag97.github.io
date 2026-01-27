@@ -5,9 +5,9 @@ const translations = {
         secondHeadline: "Ingeniero en Electrónica & Telecomunicaciones",
         visitors: "Contador de visitantes desde Enero, 2023",
         build: "Diseñado & creado con 💙 por Juan David Acosta González. ",
-        aboutMe: "Acerca de Mi",
         datingAppTitle: "Aplicación de citas Seven Swipes",
         portfolio: "Portafolio",
+        aboutMe: "Acerca de mi",
         datingAppContent: "Disfruta de la emoción de conocer gente nueva con una aplicación de citas que te empareja en función de tus intereses, preferencias y ubicación. Está diseñada para conectar, con funciones como deslizar el dedo por los perfiles, enviar mensajes personalizados y chatear en tiempo real. Los filtros avanzados y las medidas de seguridad garantizan una experiencia agradable y segura para encontrar relaciones significativas.",
         financeAppTitle: "Lisa - Asistente de Trading con IA",
         financeAppContent: "Lisa es tu asistente personal de trading con IA, diseñada para ayudarte a invertir de forma más inteligente, rápida y segura. Ofrece información del mercado en tiempo real, interacciones por chat y voz, y señales de trading automatizadas adaptadas a tu estrategia. Ya sea que sigas acciones, ETF o criptomonedas, Lisa simplifica datos complejos y los convierte en una guía clara y práctica. Puedes configurar alertas personalizadas, automatizar operaciones y recibir análisis de riesgo de tu cartera con IA. Su disponibilidad 24/7 significa que nunca estarás solo en los mercados.",
@@ -25,12 +25,12 @@ const translations = {
         buildingThings: "Me apasiona crear soluciones con electrónica y software",
         lastApp: "Descarga nuestra última aplicación: ",
         myselfDetails: "Soy ingeniero electrónico y vivo en Popayán, Colombia. Como desarrollador fullstack, trabajo principalmente con los stacks MERN y MEAN, así como con el desarrollo móvil usando Flutter. Además, soy arquitecto de soluciones en la nube especializado en AWS y Azure. Utilizo herramientas de inteligencia artificial de vanguardia de los principales proveedores de la nube, incluidos Amazon Q, Amazon Bedrock, Azure AI Services, Azure OpenAI y Claude.",
-        aboutMe: "Acerca de mi",
-        hiProfession: "Hola, soy Juan, soy ingeniero electrónico y desarrollador de software, vivo en Popayán, Colombia.",
-        detailsParagraph1: "Me gusta crear cosas que vivan en Internet y que también generen valor para los usuarios. En línea con eso, me encanta trabajar con desarrollo de software, soluciones cloud, inteligencia artificial, ingeniería de datos y aprendizaje automático, ya que estas tecnologías son tendencia y transversales a varios campos.",
+        aboutMeNav: "Acerca de mi",
+        hiProfession: "Hola! soy David, ingeniero electrónico y de software y vivo en Popayán, Colombia.",
+        detailsParagraph1: "Me gusta crear cosas que vivan en Internet y que también generen valor para los usuarios. En línea con eso, Además, me apasiona trabajar en el desarrollo de herramientas de IA, principalmente con componentes genAI como LLM, RAG y otros componentes como AWS, Azure y MERN",
         detailsParagraph2: "Me gusta tocar la guitarra, el piano y cantar. Además soy un amante de los autos, especialmente de los carros alemanes y los JDM como: el porsche GTR-RS 911, los bmw clase M y serie 3, el Nissan R34-Skyline, Nissan 370z, el Nissan GTR-NISMO, el Toyota Supra y el Subaru WRX. Ahora tengo un Chevrolet Sail llamado 'Apolo' (el de la foto). Espero crear un blog pronto, sobre tunning de autos, autos eléctricos, noticias de tecnología, desarrollo de software, inteligencia artificial y un poco de todo en general.",
         getInTouch: "Ponte en contacto", 
-        despiteTheFact: "A pesar de que actualmente no estoy buscando nuevas oportunidades, mi bandeja de entrada siempre está abierta. Si tienes alguna pregunta o simplemente quieres saludarme, buscaré responderte. Saludos.",
+        despiteTheFact: "Actualmente estoy abierto a nuevas oportunidades, por lo cual mi bandeja de entrada está abierta. Si tienes alguna pregunta o simplemente quieres saludarme, buscaré responderte. Saludos.",
         sayHello: "Pongámonos en contacto",
         main: "David",
         contact: "Contacto",
@@ -45,7 +45,7 @@ const translations = {
         secondHeadline: "Electronics & Telecomunications Engineer",
         visitors: "Visitors counter since January, 2023",
         build: "Design & built with 💙 by Juan David Acosta González ",
-        aboutMe: "About me",
+        aboutMeNav: "About me",
         datingAppTitle: "Dating App Seven Swipes",
         datingAppContent: "Engage in the excitement of meeting new people with a dating app that matches you based on shared interests, preferences, and location. It’s designed for connection, with features like swiping through profiles, sending personalized messages, and real-time chat. Advanced filters and safety measures ensure an enjoyable, secure experience for finding meaningful relationships.",
         financeAppTitle: "Lisa - AI Trading Assistant",
@@ -64,10 +64,10 @@ const translations = {
         myselfDetails: " I am an electronic engineer residing in Popayán, Colombia. As a fullstack developer, I primarily work with the MERN and MEAN stacks, as well as mobile development using Flutter. In addition, I am a cloud solutions architect specialized in AWS and Azure. I utilize cutting-edge AI tools from leading cloud providers, including Amazon Q, Amazon Bedrock, Azure AI Services, Azure OpenAI, and Claude.",
         aboutMe: "About me",
         hiProfession: "Hi! I'm Juan, an electronic engineer and a software developer based in Popayán, Colombia.",
-        detailsParagraph1: "I enjoy creating things that live on the internet and also that generate value for the users. Inline with that I love to work with Data Analysis, Data Engineering, and Machine Learning, because these technologies generates new insights and relevant information, for several fields.",
-        detailsParagraph2: " like to play the guitar, the piano and sing. Plus I'm a car lover, especially of german and JDM cars like: porsche 911 GT3-RS, bmw M Class and 2-3 series, Nissan R34-Skyline, Nissan 370z,  Nissan GTR-NISMO,  Toyota Supra, and the Subaru WRX. Now I have a Chevrolet Sail called 'Apollo' (the one of the picture). I hope to build a blog soon, about car tunning, electric cars, technology news, software development, artificial intelligence, and a little bit of everything.",
+        detailsParagraph1: "I enjoy creating things that live on the internet and also that generate value for the users. Inline with that I love to build AI tools mainly with genAI components such as LLMs, RAGs, and other components like AWS, Azure and MERN",
+        detailsParagraph2: "I'm also into music—love playing the guitar, piano, and drums, and I mess around a bit with composing and djing too. I’m also a huge car enthusiast, especially when it comes to JDM legends like the Nissan R34 Skyline, Nissan 370z, GTR NISMO, Toyota Supra, and Subaru WRX. Right now I drive a Chevrolet Sail, but as I live in Colombia I have some car limitations especially to the JDM cars they are kind of scarce, so I am saving for a Mustang or a Nissan 370z it depends because I need to check the capex and opex based on my location",
         getInTouch: "Get In Touch", 
-        despiteTheFact: "Despite the fact, I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question, or you just want to say hi, I'll try to reply you back. Cheers.",
+        despiteTheFact: "I'm currently open to new opportunities, so my inbox is open. If you have any questions or just want to say hello, I'll try to reply. Best regards.",
         sayHello: "Say Hello",
         checkBlog: "Check out my blog",
         main: "David",
@@ -123,22 +123,25 @@ function changeLanguageAboutMe(lang){
     document.getElementById('buildingThings').innerText = translations[lang].buildingThings;
     document.getElementById('lastApp').innerText = translations[lang].lastApp;
     document.getElementById('myselfDetails').innerText = translations[lang].myselfDetails;
+    document.getElementById('hiProfessionContent').innerText = translations[lang].hiProfession;
+    
     // document.getElementById('aboutMe').innerText = translations[lang].aboutMe;
-    const hiProfessionElement = document.getElementById('hiProfession');
-    const hiProfessionParagraph = hiProfessionElement.querySelector('p');
-    if (hiProfessionParagraph) {
-        hiProfessionParagraph.innerText = translations[lang].hiProfession;
-    } else {
-        hiProfessionElement.innerText = translations[lang].hiProfession;
-    }
+
+    // const hiProfessionElement = document.getElementById('hiProfession');
+    // const hiProfessionParagraph = hiProfessionElement.querySelector('p');
+    // if (hiProfessionParagraph) {
+    //     hiProfessionParagraph.innerText = translations[lang].hiProfession;
+    // } else {
+    //     hiProfessionElement.innerText = translations[lang].hiProfession;
+    // }
     document.getElementById('detailsParagraph1').innerText = translations[lang].detailsParagraph1;
     document.getElementById('detailsParagraph2').innerText = translations[lang].detailsParagraph2;
     document.getElementById('getInTouch').innerText = translations[lang].getInTouch;
     document.getElementById('despiteTheFact').innerText = translations[lang].despiteTheFact;
     document.getElementById('sayHello').innerText = translations[lang].sayHello;
     document.getElementById('build').innerText = translations[lang].build + new Date().getFullYear();
-    document.getElementById('main').innerText = translations[lang].main;
-    // document.getElementById('aboutMeNav').innerText = translations[lang].aboutMe;
+    // document.getElementById('main').innerText = translations[lang].main;
+    document.getElementById('aboutMeNav').innerText = translations[lang].aboutMeNav;
     document.getElementById('contact').innerText = translations[lang].contact;
     document.getElementById('homeAbout').innerText = translations[lang].homeAbout;
     document.getElementById('checkBlog').innerText = translations[lang].checkBlog;
