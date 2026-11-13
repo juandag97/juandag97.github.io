@@ -5,16 +5,17 @@ const translations = {
         secondHeadline: "Ingeniero en Electrónica & Telecomunicaciones",
         visitors: "Contador de visitantes desde Enero, 2023",
         build: "Diseñado & creado con 💙 por Juan David Acosta González. ",
-        datingAppTitle: "Valeria, tu experta en carros",
+        course: "Curso",
+        datingAppTitle: "Koftea",
         portfolio: "Portafolio",
         aboutMe: "Acerca de mi",
-        datingAppContent: "En lugar de sugerir modelos de moda o tendencias del momento, el sistema se enfoca en criterios prácticos, técnicos y económicos para facilitar una toma de decisiones informada y realista. Cada recomendación se construye a partir de factores medibles como costos de propiedad, contexto de uso, expectativas de mantenimiento y viabilidad a largo plazo. Los resultados son transparentes y explicables, mostrando claridad por qué se recomienda cada vehículo y qué condiciones implica la elección. El sistema considera restricciones del mundo real, con un énfasis especial en el mercado automotriz colombiano, donde la disponibilidad, el valor de reventa y los costos operativos son determinantes clave.",
+        datingAppContent: "Koftea es una marca nacida de la pasión por el café, con una línea única de productos derivados de la planta del café. Desde el té de café elaborado con hojas y cáscaras secas de café, hasta mezclas de té molido de café diseñadas para una infusión suave y distintiva, Koftea trae una perspectiva innovadora a tu ritual diario. Cada producto es cuidadosamente seleccionado y procesado para preservar los antioxidantes naturales y los sabores sutiles que hacen de los tés derivados del café una experiencia única. Ya seas amante del café que busca explorar nuevas dimensiones de sabor, o un fanático del té curioso por el lado botánico del café, Koftea tiene algo creado especialmente para ti.",
         financeAppTitle: "Lisa - Asistente de Trading con IA",
         financeAppContent: "Lisa es tu asistente personal de trading con IA, diseñada para ayudarte a invertir de forma más inteligente, rápida y segura. Ofrece información del mercado en tiempo real, interacciones por chat y voz, y señales de trading automatizadas adaptadas a tu estrategia. Ya sea que sigas acciones, ETF o criptomonedas, Lisa simplifica datos complejos y los convierte en una guía clara y práctica. Puedes configurar alertas personalizadas, automatizar operaciones y recibir análisis de riesgo de tu cartera con IA. Su disponibilidad 24/7 significa que nunca estarás solo en los mercados.",
         ecommerceAppTitle: "Aplicación para plataforma ecommerce",
         ecommerceAppContent: "Esta aplicación ofrece una experiencia de compra fluida en la que los usuarios pueden explorar una amplia gama de productos, desde moda hasta productos electrónicos, al alcance de la mano. Ofrece una interfaz intuitiva con recomendaciones personalizadas, navegación sencilla y pagos seguros. Con funciones como listas de deseos, descuentos exclusivos y seguimiento de pedidos en tiempo real, los compradores se mantienen interesados ​​y satisfechos.",
-        chatAppTitle: "Megan IA",
-        chatAppContent: "Megan es tu AI coach, diseñada para ayudarte a dominar cualquier habilidad o materia, desde aprender nuevos idiomas como el inglés hasta explorar la programación, los negocios, el arte y más. Desarrollada con inteligencia artificial de vanguardia, Megan adapta tu experiencia de aprendizaje a tus objetivos, ritmo y preferencias. Ya sea que empieces desde cero o busques perfeccionar habilidades avanzadas, Megan se adapta a tu nivel y te mantiene motivado con retroalimentación inteligente, lecciones breves y práctica práctica.",
+        chatAppTitle: "Valeria, tu experta en carros",
+        chatAppContent: "En lugar de sugerir modelos de moda o populares, el sistema se centra en criterios prácticos, técnicos y económicos para facilitar una toma de decisiones informada y realista. Cada recomendación se basa en factores cuantificables como los costos de propiedad, el contexto de uso, las expectativas de mantenimiento y la viabilidad a largo plazo. Los resultados son totalmente transparentes y explicables, mostrando claramente por qué se recomiendan ciertos vehículos y qué ventajas y desventajas implican. El sistema está diseñado en función de las limitaciones del mundo real, con especial énfasis en el mercado automotriz colombiano, donde la disponibilidad, el valor de reventa y los costos operativos desempeñan un papel fundamental en las decisiones de compra.",
         foodDeliveryAppTitle: "Aplicación para pedidos de comida",
         foodDeliveryAppContent: "Una aplicación móvil para entrega de comida permite a los usuarios explorar los menús, realizar pedidos y recibir las comidas. Las características principales incluyen una navegación fácil de usar, seguimiento de pedidos en tiempo real, opciones de comida personalizables y métodos de pago seguros. Está diseñada para una experiencia gastronómica cómoda y sin inconvenientes.",
         realStateAppTitle: "Aplicación para bienes raices",
@@ -42,16 +43,17 @@ const translations = {
         firstHeadline: "Senior Software Engineer at Teleperformance",
         portafolioTitle: "Apps Portfolio",
         portfolio: "Portfolio",
+        course: "Course",
         secondHeadline: "Electronics & Telecomunications Engineer",
         visitors: "Visitors counter since January, 2023",
         build: "Design & built with 💙 by Juan David Acosta González ",
         aboutMeNav: "About me",
-        datingAppTitle: "Valeria your car expert",
-        datingAppContent: "Rather than suggesting trendy or popular models, the system focuses on practical, technical, and economic criteria to support informed and realistic decision-making. Each recommendation is based on measurable factors such as ownership costs, usage context, maintenance expectations, and long-term viability. The results are fully transparent and explainable, clearly showing why certain vehicles are recommended and what trade-offs are involved. The system is designed around real-world constraints, with a strong emphasis on the Colombian automotive market, where availability, resale value, and operating costs play a critical role in ownership decisions.",
+        chatAppTitle: "Valeria your car expert",  
+        chatAppContent: "Rather than suggesting trendy or popular models, the system focuses on practical, technical, and economic criteria to support informed and realistic decision-making. Each recommendation is based on measurable factors such as ownership costs, usage context, maintenance expectations, and long-term viability. The results are fully transparent and explainable, clearly showing why certain vehicles are recommended and what trade-offs are involved. The system is designed around real-world constraints, with a strong emphasis on the Colombian automotive market, where availability, resale value, and operating costs play a critical role in ownership decisions.",
         financeAppTitle: "Lisa - AI Trading Assistant",
         financeAppContent: "Lisa is your personal AI trading assistant designed to help you invest smarter, faster, and with more confidence. She offers real-time market insights, chat and voice interactions, and automated trading signals tailored to your strategy. Whether you’re tracking stocks, ETFs, or crypto, Lisa simplifies complex data into clear, actionable guidance. You can set custom alerts, automate trades, and receive portfolio reviews with AI-driven risk analysis. Her 24/7 availability means you’re never alone in the markets.",
-        chatAppTitle: "Megan AI Companion",
-        chatAppContent: "Megan is your intelligent, always-available coach designed to help you master any skill or subject, from learning new languages like English, to exploring coding, business, art, and more. Built with cutting-edge AI, Megan tailors your learning experience to your goals, pace, and preferences. Whether you’re starting from scratch or looking to refine advanced skills, Megan adapts to your level and keeps you motivated with smart feedback, bite-sized lessons, and real-world practice.",
+        datingAppTitle: "Koftea",
+        datingAppContent: "Koftea is a brand born from the passion for coffee, offering a unique line of products derived from the coffee plant. From coffee tea made with dried coffee leaves and husks, to ground coffee tea blends crafted for a smooth and distinctive brew, Koftea brings an innovative twist to your daily ritual. Each product is carefully sourced and processed to preserve the natural antioxidants and subtle flavors that make coffee-derived teas a one-of-a-kind experience. Whether you’re a coffee lover looking to explore new dimensions of flavor or a tea enthusiast curious about coffee’s botanical side, Koftea has something crafted just for you.",
         foodDeliveryAppTitle: "Food Delivery App",
         foodDeliveryAppContent: "A mobile app for food delivery allows users to browse menus, place orders, and have meals delivered. Key features include user-friendly navigation, real-time order tracking, customizable meal options, and secure payment methods. It's designed for a seamless and convenient dining experience.",
         realStateAppTitle: "Real State App",
@@ -81,10 +83,10 @@ function changeLanguage(lang) {
     document.getElementById('firstHeadline').innerText = translations[lang].firstHeadline;
     document.getElementById('secondHeadline').innerText = translations[lang].secondHeadline;
     document.getElementById('visitors').innerText = translations[lang].visitors;
-    document.getElementById('build').innerText = translations[lang].build;
-    // document.getElementById('aboutMe').innerText = translations[lang].aboutMe;
+    document.getElementById('build').innerText = translations[lang].build + new Date().getFullYear();
+    document.getElementById('aboutMe').innerText = translations[lang].aboutMe;
     document.getElementById('portfolio').innerText = translations[lang].portfolio;
-    document.getElementById('book').innerText = translations[lang].book;
+    document.getElementById('course').innerText = translations[lang].course;
     document.documentElement.lang = lang;
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
@@ -150,4 +152,10 @@ function changeLanguageAboutMe(lang){
         btn.classList.remove('active');
     });
     document.querySelector(`.lang-btn[onclick="changeLanguageAboutMe('${lang}')"]`).classList.add('active');
+}
+function toggleTheme() {
+    const root = document.documentElement;
+    const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
 }

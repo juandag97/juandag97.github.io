@@ -1,9 +1,9 @@
 const apps = [{
     id: "datingApp",
-    name: "Valeria Car Expert",
-    description: "Rather than suggesting trendy or popular models, the system focuses on practical, technical, and economic criteria to support informed and realistic decision-making. Each recommendation is based on measurable factors such as ownership costs, usage context, maintenance expectations, and long-term viability. The results are fully transparent and explainable, clearly showing why certain vehicles are recommended and what trade-offs are involved. The system is designed around real-world constraints, with a strong emphasis on the Colombian automotive market, where availability, resale value, and operating costs play a critical role in ownership decisions.",
-    image: "img/valeria-icon.png",
-    link: "https://valeriacarexpert.lovable.app"
+    name: "Koftea",
+    description: "Koftea is a brand born from the passion for coffee, offering a unique line of products derived from the coffee plant. From coffee tea made with dried coffee leaves and husks, to ground coffee tea blends crafted for a smooth and distinctive brew, Koftea brings an innovative twist to your daily ritual. Each product is carefully sourced and processed to preserve the natural antioxidants and subtle flavors that make coffee-derived teas a one-of-a-kind experience. Whether you’re a coffee lover looking to explore new dimensions of flavor or a tea enthusiast curious about coffee’s botanical side, Koftea has something crafted just for you.",
+    image: "img/koftea-logo.jpeg",
+    link: "https://d3qsltj4wtkthm.cloudfront.net/"
 }, {
     id: "financeApp",
     name: "Lisa - AI Trading Assistant",
@@ -12,10 +12,10 @@ const apps = [{
     link: "https://lisa-ai.lovable.app/"
 }, {
     id: "chatApp",
-    name: "Megan companion",
-    description: "Megan is your intelligent, always-available coach designed to help you master any skill or subject, from learning new languages like English, to exploring coding, business, art, and more. Built with cutting-edge AI, Megan tailors your learning experience to your goals, pace, and preferences. Whether you’re starting from scratch or looking to refine advanced skills, Megan adapts to your level and keeps you motivated with smart feedback, bite-sized lessons, and real-world practice.",
-    image: "img/chat-app.webp",
-    link: "https://meganai.lovable.app/"
+    name: "Valeria Car Expert",
+    description: "Rather than suggesting trendy or popular models, the system focuses on practical, technical, and economic criteria to support informed and realistic decision-making. Each recommendation is based on measurable factors such as ownership costs, usage context, maintenance expectations, and long-term viability. The results are fully transparent and explainable, clearly showing why certain vehicles are recommended and what trade-offs are involved. The system is designed around real-world constraints, with a strong emphasis on the Colombian automotive market, where availability, resale value, and operating costs play a critical role in ownership decisions.",
+    image: "img/valeria-icon.png",
+    link: "https://valeriacarexpert.lovable.app"
 }];
 
 const portfolio = document.getElementById('portfolio');

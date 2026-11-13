@@ -20,6 +20,70 @@
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Theme-aware surfaces */
+    --bg-gradient-end: #1a1f3a;
+    --surface-card: rgba(30, 41, 59, 0.4);
+    --surface-card-bg: var(--surface-card);
+    --link-text: var(--text-primary);
+    --link-bg: var(--accent-soft);
+    --surface-control: rgba(15, 23, 42, 0.6);
+    --surface-footer: rgba(15, 23, 42, 0.9);
+    --surface-social: rgba(255, 255, 255, 0.05);
+    --accent-soft: rgba(59, 130, 246, 0.1);
+    --accent-soft-hover: rgba(59, 130, 246, 0.2);
+    --accent-border: rgba(59, 130, 246, 0.3);
+    --on-accent: #f8fafc;
+}
+
+/* Light theme: pearl background, white card, same blue accent */
+:root[data-theme="light"] {
+    --bg-primary: #eef1f6;
+    --bg-secondary: #f4f6fa;
+    --bg-card: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    --border-color: #dfe5ee;
+    --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.06);
+    --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.10), 0 2px 4px -1px rgba(15, 23, 42, 0.05);
+    --shadow-lg: 0 1px 2px rgba(15, 23, 42, 0.04), 0 12px 32px -8px rgba(30, 64, 175, 0.16);
+    --bg-gradient-end: #eef1f6;
+    --surface-card: #ffffff;
+    --surface-card-bg: #ffffff;
+    --surface-control: #f4f6fa;
+    --surface-footer: rgba(255, 255, 255, 0.92);
+    --surface-social: #f4f6fa;
+    --accent-soft: rgba(59, 130, 246, 0.08);
+    --accent-soft-hover: rgba(59, 130, 246, 0.16);
+    --accent-border: rgba(37, 99, 235, 0.35);
+    --on-accent: #ffffff;
+    --link-text: #1d4ed8;
+    --link-bg: #f5f8ff;
+}
+
+/* Light theme: soft section dividers */
+:root[data-theme="light"] .headlines-section,
+:root[data-theme="light"] .links-section,
+:root[data-theme="light"] .social-section {
+    position: relative;
+    padding-top: 2rem;
+}
+
+:root[data-theme="light"] .headlines-section::before,
+:root[data-theme="light"] .links-section::before,
+:root[data-theme="light"] .social-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #c9d3e3 20%, #c9d3e3 80%, transparent);
+}
+
+:root[data-theme="light"] .social-section {
+    padding-bottom: 0;
 }
 
 html,
@@ -31,7 +95,7 @@ body {
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     color: var(--text-primary);
-    background: linear-gradient(135deg, var(--bg-primary) 0%, #1a1f3a 100%);
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-gradient-end) 100%);
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -61,9 +125,9 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
+    min-height: 100dvh;
     padding: 2rem 1rem 120px 1rem; /* Extra padding bottom for fixed footer */
     width: 100%;
 }
@@ -72,7 +136,11 @@ main {
 .central-content-card {
     width: 100%;
     max-width: 700px;
-    margin: 0 auto;
+    /* Vertical centering that degrades to top-aligned (instead of clipping
+       the top, e.g. the language switcher) when content is taller than the
+       viewport — plain `justify-content: center` on main would make that
+       overflow unreachable since the browser can't scroll above 0. */
+    margin: auto auto;
     padding: 0;
 }
 
@@ -83,7 +151,7 @@ main {
     align-items: center;
     gap: 2rem;
     padding: 3rem 2rem;
-    background: rgba(30, 41, 59, 0.4);
+    background: var(--surface-card-bg);
     backdrop-filter: blur(10px);
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
@@ -101,7 +169,7 @@ main {
 #language-buttons {
     display: flex;
     gap: 0.5rem;
-    background: rgba(15, 23, 42, 0.6);
+    background: var(--surface-control);
     padding: 0.25rem;
     border-radius: 8px;
     border: 1px solid var(--border-color);
@@ -121,13 +189,13 @@ main {
 }
 
 .lang-btn:hover {
-    background: rgba(59, 130, 246, 0.1);
+    background: var(--accent-soft);
     color: var(--text-primary);
 }
 
 .lang-btn.active {
     background: var(--accent-primary);
-    color: var(--text-primary);
+    color: var(--on-accent);
     box-shadow: var(--shadow-sm);
 }
 
@@ -220,9 +288,9 @@ main {
     font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
-    color: var(--text-primary);
-    background: rgba(59, 130, 246, 0.1);
-    border: 1px solid rgba(59, 130, 246, 0.3);
+    color: var(--link-text);
+    background: var(--link-bg);
+    border: 1px solid var(--accent-border);
     border-radius: 8px;
     transition: var(--transition);
     display: inline-flex;
@@ -234,7 +302,7 @@ main {
 .link-item:hover {
     background: var(--accent-primary);
     border-color: var(--accent-primary);
-    color: var(--text-primary);
+    color: var(--on-accent);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
@@ -266,7 +334,7 @@ main {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--surface-social);
     border: 1px solid var(--border-color);
     transition: var(--transition);
     text-decoration: none;
@@ -274,7 +342,7 @@ main {
 }
 
 .social-link:hover {
-    background: rgba(59, 130, 246, 0.2);
+    background: var(--accent-soft-hover);
     border-color: var(--accent-primary);
     transform: translateY(-3px) scale(1.1);
     box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
@@ -328,7 +396,7 @@ footer,
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(15, 23, 42, 0.9);
+    background: var(--surface-footer);
     backdrop-filter: blur(10px);
     border-top: 1px solid var(--border-color);
     z-index: 100;
@@ -436,6 +504,89 @@ footer,
     }
 }
 
+/* Short-viewport fixes so content isn't clipped/hidden behind the fixed footer */
+@media screen and (max-height: 700px) {
+    main {
+        padding: 1rem 1rem 90px 1rem;
+    }
+
+    .central-myself-card {
+        gap: 1.25rem;
+        padding: 1.5rem 2rem;
+    }
+
+    .profile-pic-card {
+        width: 110px;
+        height: 110px;
+    }
+
+    .profile-section {
+        gap: 1rem;
+    }
+
+    .headlines-section {
+        gap: 0.5rem;
+    }
+
+    .social-section {
+        padding: 0.5rem 0;
+    }
+
+    .counter-section {
+        padding-top: 0.5rem;
+    }
+
+    .footer {
+        padding: 0.75rem 1rem;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    main {
+        padding: 0.75rem 0.5rem 80px 0.5rem;
+    }
+
+    .central-myself-card {
+        gap: 0.75rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .profile-pic-card {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-name {
+        font-size: 1.25rem;
+    }
+
+    .headline {
+        font-size: 1rem;
+    }
+
+    .subheadline {
+        font-size: 0.875rem;
+    }
+
+    .social-link {
+        width: 36px;
+        height: 36px;
+    }
+
+    .social-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .counter-text {
+        font-size: 0.75rem;
+    }
+
+    .footer-main p {
+        font-size: 0.8125rem;
+    }
+}
+
 /* Animation for page load */
 @keyframes fadeInUp {
     from {
@@ -474,4 +625,48 @@ footer,
 
 .central-myself-card > *:nth-child(6) {
     animation-delay: 0.6s;
+}
+
+/* Theme toggle */
+.language-switcher {
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+    color: var(--text-secondary);
+    background: var(--surface-control);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.theme-toggle:hover {
+    color: var(--text-primary);
+    border-color: var(--accent-primary);
+    background: var(--accent-soft);
+}
+
+.theme-toggle svg {
+    width: 20px;
+    height: 20px;
+}
+
+.theme-toggle .icon-sun {
+    display: none;
+}
+
+:root[data-theme="light"] .theme-toggle .icon-sun {
+    display: block;
+}
+
+:root[data-theme="light"] .theme-toggle .icon-moon {
+    display: none;
 }
