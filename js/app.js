@@ -5,6 +5,7 @@ const translations = {
         secondHeadline: "Ingeniero en Electrónica & Telecomunicaciones",
         visitors: "Contador de visitantes desde Enero, 2023",
         build: "Diseñado & creado con 💙 por Juan David Acosta González. ",
+        course: "Curso",
         datingAppTitle: "Koftea",
         portfolio: "Portafolio",
         aboutMe: "Acerca de mi",
@@ -42,6 +43,7 @@ const translations = {
         firstHeadline: "Senior Software Engineer at Teleperformance",
         portafolioTitle: "Apps Portfolio",
         portfolio: "Portfolio",
+        course: "Course",
         secondHeadline: "Electronics & Telecomunications Engineer",
         visitors: "Visitors counter since January, 2023",
         build: "Design & built with 💙 by Juan David Acosta González ",
@@ -81,10 +83,10 @@ function changeLanguage(lang) {
     document.getElementById('firstHeadline').innerText = translations[lang].firstHeadline;
     document.getElementById('secondHeadline').innerText = translations[lang].secondHeadline;
     document.getElementById('visitors').innerText = translations[lang].visitors;
-    document.getElementById('build').innerText = translations[lang].build;
-    // document.getElementById('aboutMe').innerText = translations[lang].aboutMe;
+    document.getElementById('build').innerText = translations[lang].build + new Date().getFullYear();
+    document.getElementById('aboutMe').innerText = translations[lang].aboutMe;
     document.getElementById('portfolio').innerText = translations[lang].portfolio;
-    document.getElementById('book').innerText = translations[lang].book;
+    document.getElementById('course').innerText = translations[lang].course;
     document.documentElement.lang = lang;
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');

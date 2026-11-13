@@ -61,9 +61,9 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
+    min-height: 100dvh;
     padding: 2rem 1rem 120px 1rem; /* Extra padding bottom for fixed footer */
     width: 100%;
 }
@@ -72,7 +72,11 @@ main {
 .central-content-card {
     width: 100%;
     max-width: 700px;
-    margin: 0 auto;
+    /* Vertical centering that degrades to top-aligned (instead of clipping
+       the top, e.g. the language switcher) when content is taller than the
+       viewport — plain `justify-content: center` on main would make that
+       overflow unreachable since the browser can't scroll above 0. */
+    margin: auto auto;
     padding: 0;
 }
 
@@ -433,6 +437,89 @@ footer,
     .link-item {
         padding: 0.625rem 1.25rem;
         font-size: 0.9375rem;
+    }
+}
+
+/* Short-viewport fixes so content isn't clipped/hidden behind the fixed footer */
+@media screen and (max-height: 700px) {
+    main {
+        padding: 1rem 1rem 90px 1rem;
+    }
+
+    .central-myself-card {
+        gap: 1.25rem;
+        padding: 1.5rem 2rem;
+    }
+
+    .profile-pic-card {
+        width: 110px;
+        height: 110px;
+    }
+
+    .profile-section {
+        gap: 1rem;
+    }
+
+    .headlines-section {
+        gap: 0.5rem;
+    }
+
+    .social-section {
+        padding: 0.5rem 0;
+    }
+
+    .counter-section {
+        padding-top: 0.5rem;
+    }
+
+    .footer {
+        padding: 0.75rem 1rem;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    main {
+        padding: 0.75rem 0.5rem 80px 0.5rem;
+    }
+
+    .central-myself-card {
+        gap: 0.75rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .profile-pic-card {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-name {
+        font-size: 1.25rem;
+    }
+
+    .headline {
+        font-size: 1rem;
+    }
+
+    .subheadline {
+        font-size: 0.875rem;
+    }
+
+    .social-link {
+        width: 36px;
+        height: 36px;
+    }
+
+    .social-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .counter-text {
+        font-size: 0.75rem;
+    }
+
+    .footer-main p {
+        font-size: 0.8125rem;
     }
 }
 
