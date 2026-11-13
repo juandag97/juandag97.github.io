@@ -153,3 +153,9 @@ function changeLanguageAboutMe(lang){
     });
     document.querySelector(`.lang-btn[onclick="changeLanguageAboutMe('${lang}')"]`).classList.add('active');
 }
+function toggleTheme() {
+    const root = document.documentElement;
+    const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+}
